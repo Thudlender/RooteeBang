@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rootee Jao Gao</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script>
+        $(document).ready(function(){
+            $('#carouselExampleAutoplaying').carousel({
+                interval: 6000 // Adjust the interval (in milliseconds) as needed
+            });
+        });
+    </script> -->
+</head>
+<body>
+    <header>
+        <div class="container">
+            <!-- Branding -->
+            <img src="logo img/logo.jpg">
+            <h1>Welcome to Rootee Jao Gao</h1>
+            <!--Navigation Menu-->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid" style="background-color: #0000008c;">
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" >             
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#bestSellers">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#rooteeMenu">Menu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                </div>
+              </div>  
+            </nav>
+        </div>
+    </header>
+
+    <!-- Best Sellers Slideshow -->
+    <section class="pt-5">
+        <div class="container" id="bestSellers">
+            <h2 class="mb-4">Best Sellers</h2>
+            <div id="imageSlider" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="products img/Regular Rootee1.JPG" class="d-block w-100" alt="Banner 1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Regular Rootee</h5>
+                            <p>โรตีสูตรดั่งเดิม</p><br>
+                            <p>Price: 10.00฿</p>
+                        <div>
+                            <button class="btn btn-dark">Buy Now</button> <!-- Here's the buy button -->
+                        </div>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="products img/Rootee Egg2.jpg" class="d-block w-100" alt="Banner 2">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Rootee Egg</h5>
+                            <p>โรตีใส่ไข่</p><br>
+                            <p>Price: 20.00฿</p>
+                            <div>
+                                <button class="btn btn-dark">Buy Now</button> <!-- Here's the buy button -->
+                            </div>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="products img/Rootee Baitoey3.jpg" class="d-block w-100" alt="Banner 3">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Rootee Baitoey</h5>
+                            <p>โรตีแป้งใบเตย</p><br>
+                            <p>Price: 15.00฿</p>
+                            <div>
+                                <button class="btn btn-dark">Buy Now</button> <!-- Here's the buy button -->
+                            </div>
+                          </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img src="products img/Rootee Butterfly pea9.jpg" class="d-block w-100" alt="Banner 3">
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Rootee Butterfly pea</h5>
+                        <p>โรตีแป้งอัญชัน</p><br>
+                        <p>Price: 25.00฿</p>
+                        <div>
+                            <button class="btn btn-dark">Buy Now</button> <!-- Here's the buy button -->
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="products img/Rootee Lava8.webp" class="d-block w-100" alt="Banner 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Rootee Lava</h5>
+                        <p>โรตีลาวา ใส่นมข้นและเนยสอดไส้ข้างใน</p><br>
+                        <p>Price: 20.00฿</p>
+                        <div>
+                            <button class="btn btn-dark">Buy Now</button> <!-- Here's the buy button -->
+                        </div>
+                      </div>
+                </div>
+                </div>
+                <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+        <!-- Shopping Cart -->
+        
+              <div class="container" id="cart">
+                <h2><i class="fa-solid fa-cart-shopping"></i> Shopping Cart</h2>
+                <div id="cart-items" class="list-group">
+                  <!-- Cart items will be dynamically added here -->
+                </div>
+                <p id="total-price"> Total: 0 ฿</p>
+                <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+                <button id="printCart" class="btn btn-success">Print Receipt</button>
+              </div>
+              
+              
+          
+                
+
+        <!-- Menu Page -->
+        <img class="background-image"></img>
+        <div class="container">
+            <div class="menu-section" id="rooteeMenu">
+      <h2>Rootee Menu</h2>
+      <div class="row">
+        <div class="">
+          <div class="card">
+            <img src="products img/Regular Rootee1.JPG" class="card-img-top" alt="Regular Rootee">
+            <div class="card-body">
+              <h2 class="card-title">โรตีสูตรดั่งเดิม</h2>
+              <p class="card-text">Price: <span class="price">10.00 ฿</span></p>
+              <button class="btn btn-dark add-to-cart" data-product-id="9" data-price="25">Add to cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="card">
+            <img src="products img/Rootee Egg2.jpg" class="card-img-top" alt="Rootee Egg">
+            <div class="card-body">
+              <h2 class="card-title">โรตีใส่ไข่</h2>
+              <p class="card-text">Price: <span class="price">20.00 ฿</span></p>
+              <button class="btn btn-dark add-to-cart" data-product-id="10" data-price="25">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="card">
+            <img src="products img/Rootee Baitoey3.jpg" class="card-img-top" alt="Rootee Baitoey">
+            <div class="card-body">
+              <h2 class="card-title">โรตีแป้งใบเตย พร้อมสังขยา</h2>
+              <p class="card-text">Price: <span class="price">15.00 ฿</span></p>
+              <button class="btn btn-dark add-to-cart" data-product-id="11" data-price="25">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+          <div class="card">
+            <img src="products img/Rootee Chocolate4.jpg" class="card-img-top" alt="Rootee Chocolate">
+            <div class="card-body">
+              <h2 class="card-title">โรตีใส่ช็อกโกแลต</h2>
+              <p class="card-text">Price: <span class="price">15.00 ฿</span></p>
+              <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="">
+            <div class="card">
+              <img src="products img/Rootee Foi Tong5.jpg" class="card-img-top" alt="Rootee Foi Tong">
+              <div class="card-body">
+                <h2 class="card-title">โรตีฝอยทอง</h2>
+                <p class="card-text">Price: <span class="price">20.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="card">
+              <img src="products img/Rootee Strawbarry6.jpg" class="card-img-top" alt="Rootee Strawbarry">
+              <div class="card-body">
+                <h2 class="card-title">โรตีใส่แยมสตอเบอร์รี่</h2>
+                <p class="card-text">Price: <span class="price">15.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="card">
+              <img src="products img/Rootee Banana7.jpg" class="card-img-top" alt="Rootee Banana">
+              <div class="card-body">
+                <h2 class="card-title">โรตีเนื้อกล้วยผสม</h2>
+                <p class="card-text">Price: <span class="price">25.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="card">
+              <img src="products img/Rootee Lava8.webp" class="card-img-top" alt="Rootee Lava">
+              <div class="card-body">
+                <h2 class="card-title">โรตีลาวา ใส่นมข้นและเนยสอดไส้ข้างใน</h2>
+                <p class="card-text">Price: <span class="price">20.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="card">
+              <img src="products img/Rootee Butterfly pea9.jpg" class="card-img-top" alt="Rootee Butterfly pea">
+              <div class="card-body">
+                <h2 class="card-title">โรตีแป้งอัญชัน</h2>
+                <p class="card-text">Price: <span class="price">25.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="">
+            <div class="card">
+              <img src="products img/Rootee Crunchy10.jpg" class="card-img-top" alt="Rootee Crunchy">
+              <div class="card-body">
+                <h2 class="card-title">โรตีกรอบพิเศษ</h2>
+                <p class="card-text">Price: <span class="price">20.00 ฿</span></p>
+                <button class="btn btn-dark add-to-cart" data-product-id="14" data-price="20">Add to cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    
+</div>
+</div>
+<footer>
+    <div class="container" id="contact">
+        <p>&copy; 2024 Rootee Jao Gao. All rights reserved.</p>
+        <p>Email: contact@Rootee.com</p>
+        <p>Phone: +123-456-7890</p>
+    </div>
+</footer>
+
+  
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+<script src="cart.js"></script>
+   
+</body>
+</html>
